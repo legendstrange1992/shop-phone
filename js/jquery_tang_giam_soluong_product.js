@@ -1,13 +1,7 @@
 $(document).ready(function(){
 	$('.tang_giam').click(function(){
 		var id_sanpham = $(this).attr('data-id_sanpham') ;
-
-
-
-
 		var soluong = Number($('.soluong').val());
-
-		
 		$.ajax({
 			url : 'xuly/xuly_tang_soluong.php',
 			type:'GET',

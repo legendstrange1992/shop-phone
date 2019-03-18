@@ -14,6 +14,7 @@
 <!--Fontawesome CDN-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" href="styles/login.css" type="text/css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <body>
 
 <div class="super_container">
@@ -138,59 +139,40 @@
 			<div class="row">
 
 				<!-- Get in touch -->
-				<div class="col-lg-8 contact_col">
+				<div class="col-lg-12 contact_col">
 					<div class="get_in_touch">
-						<div class="section_title">Get in Touch</div>
+						<div class="section_title">Infomation Order Cart</div>
 						<div class="section_subtitle">Say hello</div>
 						<div class="contact_form_container">
-							<form action="#" id="contact_form" class="contact_form">
+							<div action="#" id="contact_form" class="contact_form">
 								<div class="row">
 									<div class="col-xl-6">
 										<!-- Name -->
-										<label for="contact_name">First Name*</label>
-										<input type="text" id="contact_name" class="contact_input" required="required">
+										<label for="contact_name">Full Name*</label>
+										<input type="text" id="contact_name" class="contact_input fullname" required="required">
 									</div>
 									<div class="col-xl-6 last_name_col">
 										<!-- Last Name -->
-										<label for="contact_last_name">Last Name*</label>
-										<input type="text" id="contact_last_name" class="contact_input" required="required">
+										<label for="contact_last_name">Phone*</label>
+										<input type="text" id="contact_last_name"class="contact_input phone" required="required">
 									</div>
 								</div>
 								<div>
 									<!-- Subject -->
-									<label for="contact_company">Subject</label>
-									<input type="text" id="contact_company" class="contact_input">
+									<label for="contact_company">Email</label>
+									<input type="email" id="contact_company"  class="contact_input email">
 								</div>
 								<div>
-									<label for="contact_textarea">Message*</label>
-									<textarea id="contact_textarea" class="contact_input contact_textarea" required="required"></textarea>
+									<label for="contact_textarea">Address*</label>
+									<textarea id="contact_textarea"  class="contact_input address contact_textarea" required="required"></textarea>
 								</div>
-								<button class="button contact_button"><span>Send Message</span></button>
-							</form>
+								<button class="button contact_button order"><span>Order</span></button>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<!-- Contact Info -->
-				<div class="col-lg-3 offset-xl-1 contact_col">
-					<div class="contact_info">
-						<div class="contact_info_section">
-							<div class="contact_info_title">Marketing</div>
-							<ul>
-								<li>Phone: <span>0359658978</span></li>
-								<li>Email: <span>shopphone@gmail.com</span></li>
-							</ul>
-						</div>
-						
-						<div class="contact_info_section">
-							<div class="contact_info_title">Information</div>
-							<ul>
-								<li>Phone: <span>01659658978</span></li>
-								<li>Email: <span>shopphone@gmail.com</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 			<div class="row map_row">
 				<div class="col">
@@ -233,7 +215,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/greensock/animation.gsap.min.js"></script>
 <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
 <script src="plugins/easing/easing.js"></script>
-<script src="js/contact.js"></script>
 <script src="js/login.js"></script>
+<script src="js/order.js"></script>
 </body>
 </html>

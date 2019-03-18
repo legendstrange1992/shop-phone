@@ -24,8 +24,8 @@
 
 <div class="super_container">
 
-	<!-- Header -->
-	<header class="header">
+		<!-- Header -->
+		<header class="header">
 		<div class="header_container">
 			<div class="container">
 				<div class="row">
@@ -109,6 +109,7 @@
 			</ul>
 		</div>
 	</header>
+
 
 	<!-- Menu -->
 
@@ -206,8 +207,6 @@
 
 				<?php
 					foreach ($cart as $phantu => $giatri_cua_phantu ) {
-						
-					
 				 ?>
 
 					<!-- Cart Item -->
@@ -229,10 +228,10 @@
 							<div class="product_quantity_container">
 								<div class="product_quantity clearfix">
 									<span>Qty</span>
-									<input id="quantity_input" class="soluong" type="text" pattern="[0-9]*" value="<?php echo $giatri_cua_phantu['soluong']?>">
+									<input id="quantity_input_<?php echo $giatri_cua_phantu['id_sanpham']?>" class="soluong" type="text" pattern="[0-9]*" value="<?php echo $giatri_cua_phantu['soluong']?>">
 									<div class="quantity_buttons">
-										<div id="quantity_inc_button" data-id_sanpham="<?php echo $giatri_cua_phantu['id_sanpham']?>" class=" tang_giam quantity_inc quantity_control"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
-										<div id="quantity_dec_button" data-id_sanpham="<?php echo $giatri_cua_phantu['id_sanpham']?>" class="tang_giam quantity_dec quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+										<div data-id_sanpham="<?php echo $giatri_cua_phantu['id_sanpham']?>" class="tang quantity_control"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+										<div data-id_sanpham="<?php echo $giatri_cua_phantu['id_sanpham']?>" class="giam quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
 									</div>
 								</div>
 							</div>
@@ -256,7 +255,7 @@
 					<div class="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
 						<div class="button continue_shopping_button"><a href="index.php">Continue shopping</a></div>
 						<div class="cart_buttons_right ml-lg-auto">
-							<div class="button clear_cart_button"><a href="#">Clear cart</a></div>
+							<div class="button clear_cart_button"><a href="xacnhan_dathang.php">Check out</a></div>
 							
 						</div>
 					</div>
@@ -266,7 +265,7 @@
 			
 		</div>		
 	</div>
-
+	<!-- Cart Info -->
 	<!-- Footer -->
 	
 	<div class="footer_overlay"></div>
@@ -311,5 +310,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="https://www.instagram.com/"></script>
 <script src="js/jquery_tang_giam_soluong_product.js"></script>
 <script src="js/login.js"></script>
+<script src="js/tang_giam_cart.js"></script>
 </body>
 </html>

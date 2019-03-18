@@ -24,7 +24,7 @@
 											<li><a href="sanphamtheohang.php?mahang&id=<?php echo $row["MAHANG"]?>"><?php echo $row["TENHANG"] ?></a></li>									
 									<?php
 
-										}
+										
 									 ?>
 									 	</ul>
 									</li>
